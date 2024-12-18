@@ -17,7 +17,7 @@ let package = Package(
     targets: [
         .target(
             name: "mgrs_ios",
-            dependencies: ["grid_ios"],
+            dependencies: ["grid-ios"],
             path: "mgrs-ios",
             resources: [
                 .process("mgrs.plist")
