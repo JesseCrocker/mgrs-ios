@@ -12,12 +12,12 @@ let package = Package(
             targets: ["mgrs_ios"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/jessecrocker/grid-ios.git", .branch("swift-package")),
+        .package(name: "grid_ios", url: "https://github.com/jessecrocker/grid-ios.git", .branch("swift-package")),
     ],
     targets: [
         .target(
             name: "mgrs_ios",
-            dependencies: ["grid-ios"],
+            dependencies: ["grid_ios"],
             path: "mgrs-ios",
             resources: [
                 .process("mgrs.plist")
