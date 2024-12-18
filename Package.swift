@@ -13,11 +13,12 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "grid_ios", url: "https://github.com/jessecrocker/grid-ios.git", .branch("swift-package")),
+        .package(name: "color_ios", url: "https://github.com/jessecrocker/color-ios.git", .branch("swift-package")),
     ],
     targets: [
         .target(
             name: "mgrs_ios",
-            dependencies: ["grid_ios"],
+            dependencies: ["grid_ios", "color_ios"],
             path: "mgrs-ios",
             resources: [
                 .process("mgrs.plist")
